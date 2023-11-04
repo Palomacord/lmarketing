@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bg-color: #EDB9A0;
+    --text-color: #F95423;
+    --main-color: #030303;
+    --other-color: #030303;
+    --h1-font: 2rem;
+    --p-font: 1rem;
+    --menu-color: #FEFE36;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    color:var(--text-color);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo > i{
+    color:var(--main-color);
+    font-size: 30px;
+    margin-right: 6px;
+}
+
+
+.nav-menu{
+    display: flex;
+}
+
+.nav-menu a {
+    color: var( --main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 30px;
+    transition: a .55s ease;
+}
+
+.nav-menu a:hover{
+    color: var(--text-color);
+}
+
+
+.header-icons{
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.header-icons i {
+    margin-right: 25px ;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all .5 ease;
+    color: var(--main-color);
+}
+
+.header-icons i:hover{
+    transform: translateY(-5px);
+    color: var(--text-color);
+}
+
+section{
+    padding: 0 15%;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:2rem;
+}
+
+.home-img > img{
+    width: 28rem;
+    height: auto;
+    max-width: 100%;
+    margin-left: 25%;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.home-text h1{
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin: 2px;
+    margin-top: 60px;
+}
+
+.home-text h5{
+    color: gray;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 2px;
+}
+
+.home-text h3{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 2px;
+}
+
+.btn-shop{
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 12px;
+    font-weight: 300;
+    background:transparent;
+    border: solid 2px var(--text-color);
+    transition: all .5 ease;
+    color: #fff;
+}
+
+.btn-shop :hover{
+    background: var(--text-color);
+    border: 2px solid var(--text-color);
+    color: var(--main-color);
+}
+
+
+.home-main{
+    position: absolute;
+    top:60%;
+    left: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.home-main li img{
+    width: 50px;
+    height: auto;
+    max-width: 100%;
+}
+
+.row{
+    background: var(--menu-color);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: all .55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.row :hover{
+    transform: translateY(-8px);
+}
+
+.row2{
+    background: #FE3682;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .55s ease;
+    cursor: pointer;
+}
+
+
+.row2 :hover{
+    transform: translateY(-8px);
+}
+
+
+.row3{
+    background: #369DFE;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .55s ease;
+    cursor: pointer;
+}
+
+
+.row3 :hover{
+    transform: translateY(-8px);
+}
+
+
+.container-title{
+    width: 70%;
+    float: float;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container-title > h1{
+    text-decoration: solid;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.content-form{
+    width: 80%;
+    float: right;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+}
+
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+input,
+textarea {
+  /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+  font: 1em sans-serif;
+
+  /* Para dar o mesmo tamanho a todos os campo de texto */
+  width: 350px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius:5px;
+  /* Para harmonizar o look & feel das bordas nos campos de texto*/
+  border: 1px solid #999;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+input:focus,
+textarea:focus {
+  /* Dar um pouco de destaque nos elementos ativos */
+  border-color: #000;
+}
+
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
+}
+
+
+.button {
+    width: 50px;
+    border: solid 1px blue;
+    border-radius: 20px;
+    /* Para posicionar os botões para a mesma posição dos campos de texto */
+    padding-left: 10px; /* mesmo tamanho que os elementos do tipo label */
+    margin-left: 0.5em;
+}
+
+
+@media (min-width: 768px) {
+    #btnClose {
+        display: none;
+    }
+}

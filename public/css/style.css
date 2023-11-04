@@ -1,0 +1,200 @@
+
+.container-menu a:hover {
+    background-color: rgb(49, 54, 85);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    color: #000;
+    font: 12px Verdana, sans-serif;
+}
+
+.container-title{
+    width: 70%;
+    float: float;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container-title > h1{
+    text-decoration: solid;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.content-form{
+    width: 80%;
+    float: right;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+}
+
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+input,
+textarea {
+  /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+  font: 1em sans-serif;
+
+  /* Para dar o mesmo tamanho a todos os campo de texto */
+  width: 350px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius:5px;
+  /* Para harmonizar o look & feel das bordas nos campos de texto*/
+  border: 1px solid #999;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+input:focus,
+textarea:focus {
+  /* Dar um pouco de destaque nos elementos ativos */
+  border-color: #000;
+}
+
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
+}
+
+
+.button {
+    width: 50px;
+    border: solid 1px blue;
+    border-radius: 20px;
+    /* Para posicionar os botões para a mesma posição dos campos de texto */
+    padding-left: 10px; /* mesmo tamanho que os elementos do tipo label */
+    margin-left: 0.5em;
+}
+
+.menu{
+    width:550px;
+    position:fixed;
+    top:150px;
+    overflow:hidden;
+    z-index:99999;
+}
+
+:root {
+    --menu-size: 150px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+header {
+    background-color: rgb(21, 22, 29);
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#btnMenu {
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+#btnMenu:hover {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(41, 57, 98);
+}
+
+#btnMenu:active {
+    background-color: rgb(3, 4, 7);
+}
+
+#btnClose {
+    padding: 8px;
+    background-color: rgb(78, 37, 37);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btnClose:active {
+    background-color: rgb(151, 73, 73);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: var(--menu-size);
+    height: 100%;
+    background-color: rgb(40, 42, 54);
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+
+    display: block;
+}
+
+.menu ul li a {
+    transition: background 0.3s;
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.effect {
+    transition: margin 0.4s;
+}
+
+@media (min-width: 768px) {
+    #btnClose {
+        display: none;
+    }
+}
