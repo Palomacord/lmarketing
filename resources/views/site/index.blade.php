@@ -4,7 +4,7 @@
 
     <section class="home">
         <div class="home-img">
-            <img src="https://www.imagensempng.com.br/wp-content/uploads/2021/10/750-1.png" alt="tecnology">
+            <img id= "menu-img" class = "one" src="https://www.imagensempng.com.br/wp-content/uploads/2021/10/750-1.png" alt="tecnology">
         </div>
         <div class="home-text">
             <h1>Notebook <br>   Lmarketing</h1>
@@ -16,7 +16,7 @@
 
     <div class= "home-main">
         <div class="row">
-            <li><img src="https://www.imagensempng.com.br/wp-content/uploads/2021/10/750-1.png" alt="" onclick= "slider('{{asset('laptop1.png')}}')" srcset=""></li>
+            <li><img src="https://www.imagensempng.com.br/wp-content/uploads/2021/10/750-1.png" alt="" onclick= "slider('{{asset('https://www.imagensempng.com.br/wp-content/uploads/2021/10/750-1.png')}}')" srcset=""></li>
         </div>
         <div class="row2">
             <li><img src="{{asset('laptop1.png')}}" alt="" onclick= "slider('{{asset('laptop1.png')}}')" srcset=""></li>
@@ -29,10 +29,11 @@
 
     <script>
         function slider (anything){
+            console.log(anything);
             document.querySelector ('.one') .src = anything;
         };
 
-       let menu = document.querySelector ('#menu-icon');
+       let menu = document.querySelector ('#menu-img');
        let navbar = document.querySelector ('.navbar');
 
        menu.onclick = () => {

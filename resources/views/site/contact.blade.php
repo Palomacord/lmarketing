@@ -23,7 +23,7 @@
                 <textarea id="msg" name= "mensage"></textarea>
             </div>
             <div class="button">
-                 <button type="submit">Enviar</button>
+                 <button class = "btn-submit" type="submit">Enviar</button>
             </div>
         </form>
     </div>

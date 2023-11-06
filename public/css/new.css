@@ -226,23 +226,29 @@ section{
 .container-title{
     width: 70%;
     float: float;
-    text-align: center;
+    text-align: left;
+    justify-content: left;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 100px;
+    padding: 0 100px;
+    color: var(--text-color);
 }
 
 .container-title > h1{
     text-decoration: solid;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
+
 }
 
 .content-form{
     width: 80%;
-    float: right;
+    float: left;
     display: flex;
+    align-items: left;
     justify-content: left;
     flex-direction: row;
+    margin-left: 30px;
 }
 
 label {
@@ -255,7 +261,7 @@ label {
 form {
     /* Apenas para centralizar o form na página */
     margin: 0 auto;
-    width: 400px;
+    width: 500px;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
@@ -267,7 +273,7 @@ textarea {
   font: 1em sans-serif;
 
   /* Para dar o mesmo tamanho a todos os campo de texto */
-  width: 350px;
+  width: 450px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius:5px;
@@ -297,13 +303,16 @@ textarea {
 }
 
 
-.button {
-    width: 50px;
-    border: solid 1px blue;
+.btn-submit {
     border-radius: 20px;
-    /* Para posicionar os botões para a mesma posição dos campos de texto */
-    padding-left: 10px; /* mesmo tamanho que os elementos do tipo label */
-    margin-left: 0.5em;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 300;
+    background:var(--text-color);
+    border: solid 2px var(--text-color);
+    transition: all .5 ease;
+    color: #fff;
 }
 
 
