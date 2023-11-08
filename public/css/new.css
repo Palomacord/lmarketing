@@ -23,7 +23,6 @@ body{
 }
 
 header{
-    position: fixed;
     width: 100%;
     top:0;
     right: 0;
@@ -31,8 +30,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 8%;
+    padding: 5px 8%;
 }
+
+
 
 
 .logo{
@@ -229,7 +230,7 @@ section{
     text-align: left;
     justify-content: left;
     margin-bottom: 10px;
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 0 100px;
     color: var(--text-color);
 }
@@ -256,6 +257,7 @@ label {
     display: inline-block;
     width: 90px;
     text-align: left;
+    font-size: 12px;
 }
 
 form {
@@ -266,6 +268,7 @@ form {
     border: 1px solid #ccc;
     border-radius: 1em;
 }
+
 
 input,
 textarea {
@@ -281,8 +284,14 @@ textarea {
   border: 1px solid #999;
 }
 
+input{
+    float:left;
+    padding: auto;
+}
+
 form div + div {
     margin-top: 1em;
+
 }
 
 input:focus,
@@ -313,6 +322,7 @@ textarea {
     border: solid 2px var(--text-color);
     transition: all .5 ease;
     color: #fff;
+    margin-top: 10px;
 }
 
 
@@ -320,4 +330,8 @@ textarea {
     #btnClose {
         display: none;
     }
+}
+
+fieldset{
+    border: none;
 }

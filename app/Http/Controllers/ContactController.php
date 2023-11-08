@@ -15,12 +15,14 @@ class ContactController extends Controller
         $contact->phone = $request->input('phone');
         $contact->email = $request->input('email');
         $contact->mensage = $request->input('mensage');
-       // print_r($contact->getAttributes());
-        $contact->save();
+
+        if($contact->name){
+            $contact->save();
+        }
 
         //outra forma
         //$contact->fill($request->all());
-         //$contact->create($request->all());
+        //$contact->create($request->all());
         return view('site.contact');
     }
 

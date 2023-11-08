@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@home')->name('site.index');
 Route::get('/index', 'HomeController@index')->name('site.begin');
 Route::get('/product','ProductController@product')->name('site.product');
+Route::post('/product','ProductController@product')->name('site.product');
 Route::get('/contact', "ContactController@index")->name('site.contact');
 Route::post('/contact', "ContactController@index")->name('site.contact');
 Route::get('/login',function(){
