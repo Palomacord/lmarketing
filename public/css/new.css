@@ -235,6 +235,9 @@ section{
     color: var(--text-color);
 }
 
+.container-content{
+    height: 400px;
+}
 .container-title > h1{
     text-decoration: solid;
     font-size: 18px;
@@ -388,6 +391,7 @@ fieldset{
 }
 .card-img > img {
     margin-top: 20px;
+    margin-bottom: 10px;
     width: 450px;
     height: 350px;
     transition: all .55s ease;
@@ -397,4 +401,19 @@ fieldset{
 
 .card-img > img:hover{
     transform: translateY(-9px);
+}
+
+
+footer {
+	background-color: var(--main-color);
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+    width: 100%;
+}
+
+a {
+	color: var(--bg-color);
+	text-decoration: none;
 }

@@ -20,4 +20,8 @@
 <body>
     @yield('content')
 </body>
+<footer>
+@include('site.layouts._partials.footer')
+</footer>
+
 </html>
