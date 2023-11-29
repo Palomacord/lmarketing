@@ -19,6 +19,8 @@ Route::get('/product','ProductController@product')->name('site.product');
 Route::post('/product','ProductController@product')->name('site.product');
 Route::get('/contact', "ContactController@index")->name('site.contact');
 Route::post('/contact', "ContactController@index")->name('site.contact');
+
+Route::get('/return','MensageController@return')->name('site.confirm');
 Route::get('/login',function(){
     return 'Login';
 })->name('site.login');

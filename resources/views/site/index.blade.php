@@ -27,6 +27,21 @@
 
     </div>
 
+    <div class="card">
+        <div class="card-content">
+            <div class="card-title">
+                <h5>Sinta a Música como Nunca Antes com o Novo Fone Power Ear!</h5>
+                <p>Descubra uma experiência sonora revolucionária com o nosso mais recente lançamento: o Power Ear.
+                    Este não é apenas um fone de ouvido, é uma porta de entrada para um universo de áudio imersivo e qualidade sonora incomparável.</p>
+            </div>
+            <div class="card-img">
+                <img src="https://supreo.com.br/wp-content/uploads/2023/03/1-ATUALIZADA-Fone-de-Ouvido-Bluetooth-Capa-2.png" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
     <script>
         function slider (anything){
             console.log(anything);

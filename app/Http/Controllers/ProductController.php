@@ -16,6 +16,7 @@ class ProductController extends Controller
         $product->min_stock = $request->input('min_stock');
         $product->max_stock = $request->input('max_stock');
         $product->quantity = $request->input('quantity');
+
         if($product->name){
             $product->save();
         }

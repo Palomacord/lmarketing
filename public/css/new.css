@@ -335,3 +335,66 @@ textarea {
 fieldset{
     border: none;
 }
+
+.text-mensage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: solid 1px var(--text-color);
+    background: #f0fcf6;
+    border-radius: 10px;
+}
+
+.text-mensage > h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+
+
+.card{
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+}
+
+.card-title{
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 50%;
+    align-items: center;
+    float: left;
+}
+.card-title > h5 {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.card-title > p{
+  margin-top: 3px;
+
+}
+.card-img{
+    justify-content: right;
+    display: flex;
+    align-items: left;
+    margin: auto;
+}
+.card-img > img {
+    margin-top: 20px;
+    width: 450px;
+    height: 350px;
+    transition: all .55s ease;
+    cursor: pointer;
+}
+
+
+.card-img > img:hover{
+    transform: translateY(-9px);
+}
