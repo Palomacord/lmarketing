@@ -7,6 +7,9 @@ use App\Products;
 
 class ProductController extends Controller
 {
+    public function __construct(){
+        $this->middleware(LogAcessMiddleware::class);
+    }
     public function product(Request $request){
         $product = new Products;
         $product->name = $request->input('name');

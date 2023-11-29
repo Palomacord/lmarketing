@@ -5,9 +5,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Contact;
+use App\Http\Middleware\LogAcessMiddleware;
 
 class ContactController extends Controller
 {
+
+    public function __construct(){
+        $this->middleware(LogAcessMiddleware::class);
+    }
     public function index(Request $request){
        // dd($request->all());
         $contact = new Contact;

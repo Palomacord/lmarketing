@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\middleware\LogAcessMiddleware;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@home')->name('site.index');
+Route::get('/', 'HomeController@home')->name('site.index')->middleware(LogAcessMiddleware::class);
 Route::get('/index', 'HomeController@index')->name('site.begin');
 Route::get('/product','ProductController@product')->name('site.product');
 Route::post('/product','ProductController@product')->name('site.product');
